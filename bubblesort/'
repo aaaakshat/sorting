@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+def print_arr(x):
+    out = ""
+    for i in x:
+        out += str(i)
+        out += " "
+    print(out)
+
+def bubblesort(x):
+    n = len(x)
+    print("Bubblesorting:")
+    for i in range(n):
+        print_arr(x)
+        for j in range(i, n):
+            if (x[j] > x[i]):
+                t = x[j]
+                x[j] = x[i] 
+                x[i] = t
+    return x
+
+# Get inp
+n = int(input())
+x = []
+for _ in range(n):
+    x.append(int(input()))
+
+x = selectionsort_down(x)
+
+# Print array
+print("Sorted Arr:")
+print_arr(x)
