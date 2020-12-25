@@ -11,25 +11,35 @@ def print_arr(x):
 def bubblesort_up(x):
     n = len(x)
     print("Bubblesort up:")
+    sorted = True 
     for i in range(n):
+        sorted = True 
         print_arr(x)
         for j in range(n-1):
             if (x[j] > x[j+1]):
                 t = x[j]
                 x[j] = x[j+1] 
                 x[j+1] = t
+                sorted = False
+        if(sorted):
+            break
     return x
 
 def bubblesort_down(x):
     n = len(x)
     print("Bubblesort down:")
+    sorted = True
     for i in range(n-1, -1, -1):
+        sorted = True 
         print_arr(x)
         for j in range(n-1, 0, -1):
             if (x[j] < x[j-1]):
                 t = x[j]
                 x[j] = x[j-1] 
                 x[j-1] = t
+                sorted = False
+        if(sorted):
+            break
     return x
 
 # Get inp
