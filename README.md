@@ -3,9 +3,9 @@
 _Implementing sorting algorithms in different languages_
 
 ## Todo
-- [ ] Bubble sort
+- [x] Bubble sort
 - [ ] Bogo sort
-- [ ] Selection sort
-- [ ] Insertion sort
+- [x] Selection sort
+- [x] Insertion sort
 - [ ] Merge sort
 - [ ] Quick sort
