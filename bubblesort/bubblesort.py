@@ -15,7 +15,7 @@ def bubblesort_up(x):
     for i in range(n):
         sorted = True 
         print_arr(x)
-        for j in range(n-1):
+        for j in range(n):
             if (x[j] > x[j+1]):
                 t = x[j]
                 x[j] = x[j+1] 
